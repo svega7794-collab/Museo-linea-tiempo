@@ -4,12 +4,12 @@
 
 ## Abrir en tu computadora
 
-Abre `index.html` con Chrome, Edge o Firefox. No necesitas instalar nada. Los cuadros del museo son archivos SVG locales en `assets/`; la fuente tipográfica usa Google Fonts y, si no hay internet, aparece una alternativa local.
+Abre `index.html` con Chrome, Edge o Firefox. No necesitas instalar nada. Las ilustraciones SVG están incorporadas en `index.html`, por lo que no tienes que subir ninguna carpeta de imágenes; la fuente tipográfica usa Google Fonts y, si no hay internet, aparece una alternativa local.
 
 ## Publicar en GitHub y Render
 
 1. Crea un repositorio nuevo en GitHub (por ejemplo `museo-del-conocimiento`).
-2. Sube **el contenido de esta carpeta** (`index.html`, `styles.css`, `script.js`, `assets/`, `render.yaml`, `README.md`). Puedes hacerlo en **Add file → Upload files**. Asegúrate de que `index.html` quede en la raíz del repositorio.
+2. Sube **el contenido de esta carpeta** (`index.html`, `styles.css`, `script.js`, `render.yaml`, `README.md`). Puedes hacerlo en **Add file → Upload files**. Asegúrate de que `index.html` quede en la raíz del repositorio.
 3. En [Render](https://render.com/) entra a **New → Static Site** y conecta ese repositorio.
 4. Configura **Build Command**: `echo 'Sitio listo'` y **Publish Directory**: `.`. Si Render reconoce `render.yaml`, también puedes usar **New → Blueprint**.
 5. Pulsa **Deploy**. Render entregará una URL pública `https://...onrender.com` que puedes publicar en el foro o convertir en código QR.
@@ -21,7 +21,7 @@ Abre `index.html` con Chrome, Edge o Firefox. No necesitas instalar nada. Los cu
 - Textos de las salas y sus fechas: `index.html`.
 - Preguntas, respuestas y referencias emergentes: `script.js`.
 - Colores, tamaños, iluminación, cuadros y diseño móvil: `styles.css`.
-- Pinturas: `assets/*.svg` (ilustraciones originales en SVG).
+- Pinturas: SVG incluidos directamente dentro de `index.html` para evitar imágenes rotas.
 
 ## Contenido académico
 
