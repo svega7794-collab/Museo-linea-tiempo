@@ -30,3 +30,7 @@ La exposición interpreta tres momentos (correspondencia, LMS y aprendizaje móv
 ## Créditos
 
 Museo interactivo diseñado para una actividad académica. Ilustraciones SVG originales incluidas. Código HTML, CSS y JS sin dependencias de ejecución externas.
+
+
+## Actualizaciones académicas
+La galería incluye una línea del tiempo clicable con 1840, 2002 y década de 2010. La teoría conductista se presenta como asociación retrospectiva, no como el fundamento histórico de la enseñanza de Pitman.
