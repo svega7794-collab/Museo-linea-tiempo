@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#101b26" />
+  <title>Museo del Conocimiento · Cuando el conocimiento aprendió a viajar</title>
+  <meta name="description" content="Un museo interactivo sobre tres transformaciones de la educación digital." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <button class="brand" type="button" data-go="entrada" aria-label="Volver a la entrada del museo"><span class="brand-mark">✳</span><span>MUSEO <small>DEL CONOCIMIENTO</small></span></button>
+    <div class="top-right"><span class="top-status"><i></i> EXPOSICIÓN DIGITAL</span><button id="sound-toggle" class="icon-button" type="button" title="Activar o desactivar sonido" aria-label="Activar sonidos">♫ <span id="sound-label">OFF</span></button></div>
+  </header>
+  <main id="app">
+    <section class="scene active" id="entrada" data-room="entrada" aria-label="Vestíbulo del museo">
+      <div class="museum-room hall">
+        <div class="ceiling"></div><div class="left-wall"></div><div class="right-wall"></div><div class="back-wall"></div><div class="floor"></div>
+        <div class="spotlight left-light"></div><div class="spotlight right-light"></div>
+        <div class="wall-content entrance-content">
+          <p class="eyebrow">EXPOSICIÓN PERMANENTE · HISTORIA DE LA EDUCACIÓN</p>
+          <h1>CUANDO EL<br><em>CONOCIMIENTO</em><br>APRENDIÓ A VIAJAR</h1>
+          <div class="gold-line"></div>
+          <p class="opening-text">Tres siglos, tres transformaciones y una pregunta: ¿cómo cambió nuestra manera de aprender?</p>
+          <button type="button" class="gold-button" data-go="galeria">ENTRAR AL MUSEO <span>→</span></button>
+        </div>
+        <div class="floor-emblem">M · C</div>
+      </div>
+      <div class="bottom-hint">DESLIZA HACIA ABAJO O SELECCIONA «ENTRAR AL MUSEO» <span>↓</span></div>
+    </section>
+
+    <section class="scene" id="galeria" data-room="galeria" aria-label="Galería central">
+      <div class="room-info"><span>PLANTA PRINCIPAL / 00</span><span>LA GALERÍA DE LOS TRES VIAJES</span></div>
+      <div class="gallery-stage">
+        <div class="gallery-roof"></div><div class="gallery-side side-l"></div><div class="gallery-side side-r"></div><div class="gallery-floor"></div><div class="gallery-back"></div>
+        <div class="gallery-title"><small>BIENVENIDOS A</small><h2>LA GALERÍA<br><i>DEL TIEMPO</i></h2><p>Haz clic sobre una obra para entrar en su sala.</p></div>
+        <div class="paintings">
+          <button class="art-piece" type="button" data-go="sala-correo" aria-label="Entrar a la sala 1: El conocimiento cruzó distancias"><span class="art-light"></span><span class="frame"><img src="assets/correspondencia.svg" alt="Pintura estilizada de cartas y escritura del siglo XIX" /></span><span class="plaque"><strong>I. EL MENSAJE</strong><small>1840 · CORRESPONDENCIA</small></span></button>
+          <button class="art-piece" type="button" data-go="sala-redes" aria-label="Entrar a la sala 2: El conocimiento construyó redes"><span class="art-light"></span><span class="frame"><img src="assets/redes.svg" alt="Pintura estilizada de una computadora y conexiones digitales" /></span><span class="plaque"><strong>II. EL ENCUENTRO</strong><small>2002 · AULAS VIRTUALES</small></span></button>
+          <button class="art-piece" type="button" data-go="sala-movil" aria-label="Entrar a la sala 3: El conocimiento nos acompaña"><span class="art-light"></span><span class="frame"><img src="assets/movil.svg" alt="Pintura estilizada de un teléfono móvil y fuentes de conocimiento" /></span><span class="plaque"><strong>III. LA LIBERTAD</strong><small>2010s · M-LEARNING</small></span></button>
+        </div>
+        <div class="floor-decoration">✧</div>
+      </div>
+      <div class="gallery-caption">Tres obras. Tres maneras de romper los límites del aula.</div>
+    </section>
+
+    <section class="scene exhibit" id="sala-correo" data-room="sala-correo">
+      <div class="room-info"><span>SALA I / EL MENSAJE</span><span>1840 · ENSEÑANZA POR CORRESPONDENCIA</span></div>
+      <div class="exhibit-layout">
+        <div class="hero-art"><div class="art-aura"></div><div class="big-frame"><img src="assets/correspondencia.svg" alt="Cartas y plumilla, representación de la educación por correspondencia" /></div><p class="art-caption">01 / EL CONOCIMIENTO CRUZÓ DISTANCIAS</p></div>
+        <article class="exhibit-story"><span class="chapter">CAPÍTULO UNO · DÉCADA DE 1840</span><h2>Cuando una carta<br><i>se convirtió</i><br>en un aula.</h2><p class="lead">Antes de las pantallas, aprender a distancia significaba esperar una respuesta por correo.</p><p>En la década de 1840, Isaac Pitman utilizó el correo para enseñar taquigrafía: los estudiantes enviaban ejercicios y recibían correcciones. Esta experiencia se reconoce como uno de los antecedentes de la enseñanza moderna a distancia.</p><div class="fact"><b>IMPACTO SOCIAL</b><p>La presencia en el salón dejó de ser una condición indispensable. La distancia podía superarse, aunque persistían barreras de acceso y de tiempo.</p></div><div class="fact"><b>LECTURA PEDAGÓGICA</b><p><strong>Conductismo (relación retrospectiva).</strong> La práctica repetida y la retroalimentación permiten establecer una conexión con ideas conductistas posteriores. El conductismo no existía como teoría formal en 1840.</p></div><button class="question" data-open="correo">UNA PREGUNTA PARA PENSAR <span>↗</span></button></article>
+      </div>
+      <div class="room-actions"><button data-go="galeria">← VOLVER A LA GALERÍA</button><button data-go="sala-redes">SIGUIENTE SALA →</button></div>
+    </section>
+    <section class="scene exhibit" id="sala-redes" data-room="sala-redes">
+      <div class="room-info"><span>SALA II / EL ENCUENTRO</span><span>2002 · ENTORNOS VIRTUALES</span></div>
+      <div class="exhibit-layout"><div class="hero-art"><div class="art-aura"></div><div class="big-frame"><img src="assets/redes.svg" alt="Computadora y red digital, representación de las plataformas virtuales" /></div><p class="art-caption">02 / EL CONOCIMIENTO CONSTRUYÓ REDES</p></div><article class="exhibit-story"><span class="chapter">CAPÍTULO DOS · 2002</span><h2>Cuando el aula<br><i>aprendió a</i><br>conectarse.</h2><p class="lead">Internet hizo posible que aprender también significara debatir, compartir y construir en comunidad.</p><p>En 2002 se lanzó Moodle, una plataforma de gestión del aprendizaje (LMS). No fue el primer entorno virtual, pero se convirtió en un referente para organizar materiales, tareas, evaluaciones y conversaciones educativas en línea.</p><div class="fact"><b>IMPACTO SOCIAL</b><p>Se ampliaron las oportunidades para estudiar con mayor flexibilidad y mantener vínculos educativos sin coincidir siempre en un mismo espacio o momento.</p></div><div class="fact"><b>LECTURA PEDAGÓGICA</b><p><strong>Constructivismo social.</strong> Los foros, proyectos y actividades colaborativas pueden favorecer la creación de conocimientos mediante interacción y participación activa; una plataforma por sí sola no garantiza ese enfoque.</p></div><button class="question" data-open="redes">UNA PREGUNTA PARA PENSAR <span>↗</span></button></article></div><div class="room-actions"><button data-go="sala-correo">← SALA ANTERIOR</button><button data-go="sala-movil">SIGUIENTE SALA →</button></div>
+    </section>
+    <section class="scene exhibit" id="sala-movil" data-room="sala-movil">
+      <div class="room-info"><span>SALA III / LA LIBERTAD</span><span>DÉCADA DE 2010 · M-LEARNING</span></div>
+      <div class="exhibit-layout"><div class="hero-art"><div class="art-aura"></div><div class="big-frame"><img src="assets/movil.svg" alt="Teléfono e ideas conectadas, representación del aprendizaje móvil" /></div><p class="art-caption">03 / EL CONOCIMIENTO EMPEZÓ A ACOMPAÑARNOS</p></div><article class="exhibit-story"><span class="chapter">CAPÍTULO TRES · DÉCADA DE 2010</span><h2>Cuando el aula<br><i>dejó de tener</i><br>paredes.</h2><p class="lead">Con los teléfonos inteligentes, el conocimiento se volvió accesible en muchos momentos de la vida cotidiana.</p><p>El aprendizaje móvil, o <em>m-learning</em>, había surgido antes, pero tomó mayor fuerza con la expansión de los teléfonos inteligentes y las tabletas. La lectura asignada analiza cómo esta movilidad altera la relación con la información, los espacios y las experiencias de aprendizaje.</p><div class="fact"><b>IMPACTO SOCIAL</b><p>Se abrieron posibilidades de autonomía y aprendizaje situado. También aparecieron tensiones relativas a distracciones, brechas digitales y sobreabundancia de información.</p></div><div class="fact"><b>LECTURA PEDAGÓGICA</b><p><strong>Conectivismo.</strong> Aprender puede implicar establecer y evaluar conexiones entre personas, medios y fuentes de información. No todo uso del móvil constituye aprendizaje conectivista.</p></div><button class="question" data-open="movil">UNA PREGUNTA PARA PENSAR <span>↗</span></button></article></div><div class="room-actions"><button data-go="sala-redes">← SALA ANTERIOR</button><button data-go="epilogo">IR A LA REFLEXIÓN FINAL →</button></div>
+    </section>
+    <section class="scene outro" id="epilogo" data-room="epilogo"><div class="outro-content"><span class="chapter">EL ÚLTIMO ESPACIO / REFLEXIONES</span><h2>La tecnología cambia.<br><i>La pregunta permanece.</i></h2><div class="gold-line"></div><p>De las cartas a las plataformas virtuales y de ellas a los dispositivos móviles, cada innovación ha ampliado las formas de aprender. Pero disponer de nuevas herramientas no garantiza una educación más profunda, inclusiva o humana.</p><p>Los enfoques pedagógicos ayudan a reconocer que aprender exige práctica y retroalimentación, participación en la construcción de saberes y conexiones críticas entre personas e información. Lo importante no es solamente <em>dónde</em> está el conocimiento, sino <em>qué hacemos con él</em>.</p><blockquote>«¿Estamos transformando la educación o únicamente cambiando las herramientas con las que enseñamos?»</blockquote><div class="outro-actions"><button class="gold-button" data-go="galeria">VOLVER A EXPLORAR <span>↺</span></button><button class="subtle-button" data-open="fuentes">VER REFERENCIAS ↗</button></div></div></section>
+  </main>
+  <nav class="bottom-nav" aria-label="Navegación principal"><button data-go="entrada">INICIO</button><span class="dot">✦</span><button data-go="galeria">GALERÍA</button><span class="dot">✦</span><button data-go="epilogo">REFLEXIÓN</button><span class="dot">✦</span><button data-open="fuentes">FUENTES</button></nav>
+  <div class="modal-backdrop" id="modal" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" id="modal-close" aria-label="Cerrar">×</button><span class="chapter" id="modal-eyebrow">PAUSA PARA PENSAR</span><h2 id="modal-title"></h2><div id="modal-body"></div><button class="gold-button modal-ok" id="modal-ok">CONTINUAR EL RECORRIDO <span>→</span></button></div></div>
+  <script src="script.js"></script>
+</body>
+</html>

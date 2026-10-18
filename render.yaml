@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: museo-del-conocimiento
+    runtime: static
+    buildCommand: echo 'Sitio listo'
+    staticPublishPath: .
